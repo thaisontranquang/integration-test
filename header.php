@@ -11,3 +11,7 @@
 </head>
 
 <body>
+
+    <header>
+        <?php echo carbon_get_theme_option('logo'); ?>
+    </header>

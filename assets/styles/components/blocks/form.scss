@@ -45,7 +45,7 @@
         }
 
         @media (min-width: $from-medium) {
-            padding: 1rem 0;
+            padding: 1.5rem 0;
         }
 
         input,
@@ -59,6 +59,8 @@
 
         textarea {
             height: 3.8rem;
+            resize: none;
+            resize: vertical;
         }
 
         p {
@@ -77,10 +79,14 @@
             }
         }
 
+        p:last-of-type {
+            font-size: 1rem;
+        }
+
         .wpcf7-form-control.wpcf7-acceptance {
             .wpcf7-list-item {
                 margin: unset;
-                margin-top: 0.8rem;
+                margin-top: 0.6rem;
                 label {
                     display: flex;
                     gap: 1rem;
@@ -125,12 +131,16 @@
             }
         }
 
-        .wpcf7-form-control.has-spinner.wpcf7-submit {
+        // .wpcf7-form-control.has-spinner.wpcf7-submit
+
+        .submit_button {
             background: $color-secondary;
             border: unset;
             border-radius: 5px;
             color: $color-black;
             padding: 1.4rem 2.5rem;
+            font-size: 1rem;
+            cursor: pointer;
 
             @media (min-width: $from-small) {
                 max-width: fit-content;

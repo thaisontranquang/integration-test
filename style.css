@@ -140,7 +140,7 @@ table {
 
 @font-face {
   font-family: "luxi_serifregular";
-  src: url("/assets/fonts/luxirr-webfont.woff2") format("woff2"), url("/assets/fonts/luxirr-webfont.woff") format("woff");
+  src: url("assets/fonts/luxi_serif_regular-webfont.woff2") format("woff2"), url("assets/fonts/luxi_serif_regular-webfont.woff") format("woff");
   font-weight: normal;
   font-style: normal;
 }
@@ -157,6 +157,7 @@ body {
   font-weight: 400;
   overflow-x: hidden;
   color: #1d1d1b;
+  background: #faf8f6;
 }
 
 h1 {
@@ -220,7 +221,7 @@ h1 {
 }
 @media (min-width: 1000px) {
   .block_form .contact-form {
-    padding: 1rem 0;
+    padding: 1.5rem 0;
   }
 }
 .block_form .contact-form input,
@@ -233,6 +234,8 @@ h1 {
 }
 .block_form .contact-form textarea {
   height: 3.8rem;
+  resize: none;
+  resize: vertical;
 }
 .block_form .contact-form p {
   padding-bottom: 0.8rem;
@@ -248,9 +251,12 @@ h1 {
   font-size: 2.05rem;
   font-weight: 300;
 }
+.block_form .contact-form p:last-of-type {
+  font-size: 1rem;
+}
 .block_form .contact-form .wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item {
   margin: unset;
-  margin-top: 0.8rem;
+  margin-top: 0.6rem;
 }
 .block_form .contact-form .wpcf7-form-control.wpcf7-acceptance .wpcf7-list-item label {
   display: flex;
@@ -291,15 +297,17 @@ h1 {
   left: 0;
   top: -0.2rem;
 }
-.block_form .contact-form .wpcf7-form-control.has-spinner.wpcf7-submit {
+.block_form .contact-form .submit_button {
   background: #b6a284;
   border: unset;
   border-radius: 5px;
   color: #1d1d1b;
   padding: 1.4rem 2.5rem;
+  font-size: 1rem;
+  cursor: pointer;
 }
 @media (min-width: 700px) {
-  .block_form .contact-form .wpcf7-form-control.has-spinner.wpcf7-submit {
+  .block_form .contact-form .submit_button {
     max-width: fit-content;
   }
 }

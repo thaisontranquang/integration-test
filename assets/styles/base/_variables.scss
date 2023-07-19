@@ -1,0 +1,34 @@
+//FONTS
+$secondary-font: 'Roboto', sans-serif;
+$primary-font: 'luxi_serifregular';
+
+//COLORS
+$color-black: #1d1d1b;
+$color-white: #fffffe;
+
+$color-gray-1: #d0d3d4;
+$color-gray-2: #979797;
+
+$color-primary: #2e483e;
+$color-primary-transparent: rgba(46, 72, 62, 0.8);
+$color-secondary: #b6a284;
+
+//DISPLAYS
+$from-tiny: 500px;
+$to-tiny: $from-tiny - 1;
+$from-small: 700px;
+$to-small: $from-small - 1;
+$from-medium: 1000px;
+$to-medium: $from-medium - 1;
+$from-large: 1200px;
+$to-large: $from-large - 1;
+$from-big: 1400px;
+$to-big: $from-big - 1;
+$from-huge: 1600px;
+$to-huge: $from-huge - 1;
+$from-enormous: 1800px;
+$to-enormous: $from-enormous - 1;
+$from-gigantic: 2000px;
+$to-gigantic: $from-gigantic - 1;
+$from-colossal: 2400px;
+$to-colossal: $from-colossal - 1;

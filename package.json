@@ -1,0 +1,15 @@
+{
+    "name": "custom_theme",
+    "version": "1.0.0",
+    "description": "This theme was created for Kaizen Agency",
+    "scripts": {
+        "build": "webpack"
+    },
+    "author": "Thai-Son Tran Quang",
+    "license": "ISC",
+    "main": "index.js",
+    "devDependencies": {
+        "sass": "^1.63.6"
+    },
+    "keywords": []
+}

@@ -8,8 +8,6 @@
     <title><?php the_title(); ?></title>
     <?php wp_head(); ?>
     <link rel="stylesheet" type="text/css" href="<?php echo get_template_directory_uri(); ?>/style.css">
-    <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/assets/styles/owl_carousel/owl.carousel.min.css">
-
 </head>
 
 <body>

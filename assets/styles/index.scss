@@ -11,6 +11,10 @@ Version: 1.0
 @import './base/fonts';
 @import './base/variables';
 @import './base/base';
+
 @import './components/blocks/form';
 @import './components/blocks/title_text';
 @import './components/blocks/cta_shop';
+@import './components/blocks/slider';
+
+@import './components/splide.min.scss';

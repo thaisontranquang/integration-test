@@ -234,6 +234,11 @@ a {
     padding: 3rem 8rem;
   }
 }
+@media (min-width: 1000px) {
+  .block_form .contact-form {
+    padding: 3rem 10rem;
+  }
+}
 @media (min-width: 1200px) {
   .block_form .contact-form {
     padding: 1.5rem 0;
@@ -439,22 +444,40 @@ a {
 
 .block_slider {
   width: 100%;
-  padding-left: 10rem;
+  padding-left: 1rem;
   display: flex;
   flex-direction: column-reverse;
+}
+@media (min-width: 1000px) {
+  .block_slider {
+    padding-left: 10rem;
+  }
 }
 .block_slider .splide__list {
   transform: unset;
 }
 .block_slider .splide__list li.splide__slide {
-  margin-right: 1.5rem;
+  margin-right: 1rem;
   max-width: fit-content;
 }
+@media (min-width: 700px) {
+  .block_slider .splide__list li.splide__slide {
+    margin-right: 1.5rem;
+  }
+}
 .block_slider .splide__list li.splide__slide img {
-  height: 20rem;
   max-width: unset;
   transition: transform 0.2s ease-in-out;
   position: relative;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+@media (min-width: 700px) {
+  .block_slider .splide__list li.splide__slide img {
+    width: unset;
+    height: 20rem;
+  }
 }
 .block_slider .splide__list li.splide__slide:hover img {
   transform: scale(1.02);
@@ -464,10 +487,17 @@ a {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  width: 20rem;
-  height: 20rem;
   background: #f0efeb;
   padding: 3rem;
+  width: 100%;
+  height: 20rem;
+  object-fit: cover;
+}
+@media (min-width: 700px) {
+  .block_slider .splide__list li.splide__slide .alt_text {
+    width: 20rem;
+    height: 20rem;
+  }
 }
 .block_slider .splide__list li.splide__slide .alt_text p {
   font-family: "Roboto", sans-serif;
@@ -495,7 +525,11 @@ a {
 .block_slider .splide__arrows.splide__arrows--ltr {
   display: flex;
   justify-content: center;
-  padding-right: 10rem;
+}
+@media (min-width: 1000px) {
+  .block_slider .splide__arrows.splide__arrows--ltr {
+    padding-right: 10rem;
+  }
 }
 .block_slider .splide__arrow.splide__arrow--prev,
 .block_slider .splide__arrow.splide__arrow--next {
@@ -503,6 +537,65 @@ a {
   width: 2.5rem;
   margin: 0.5rem;
   background: #f0efeb;
+}
+
+.block_introduction {
+  background: #fffffe;
+  padding: 5rem 1rem;
+}
+.block_introduction div {
+  max-width: 57.5rem;
+  width: 100%;
+  margin: auto;
+}
+.block_introduction div h2 {
+  font-family: "Roboto", sans-serif;
+  font-size: 2rem;
+  line-height: 2.625rem;
+  font-weight: 300;
+  color: #1d1d1b;
+  margin-bottom: 1rem;
+  max-width: 90%;
+}
+@media (min-width: 700px) {
+  .block_introduction div h2 {
+    font-size: 3rem;
+    line-height: 3.625rem;
+  }
+}
+.block_introduction div .grid {
+  display: grid;
+  width: 100%;
+  gap: 1.5rem;
+  grid-template-columns: 1fr;
+}
+@media (min-width: 700px) {
+  .block_introduction div .grid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+.block_introduction div .grid div {
+  width: 100%;
+  height: 100%;
+}
+.block_introduction div .grid div img {
+  width: 100%;
+  height: 16.4rem;
+  object-fit: cover;
+}
+.block_introduction div .grid div p:first-of-type {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  color: #1d1d1b;
+  font-size: 1.125rem;
+  line-height: 1.625rem;
+  margin: 0.5rem 0;
+}
+.block_introduction div .grid div p {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.5rem;
+  color: #4b4b4a;
+  margin-top: 0.5rem;
 }
 
 .splide__container {

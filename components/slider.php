@@ -3,7 +3,7 @@
 use Carbon_Fields\Field;
 use Carbon_Fields\Container;
 
-function slider_carbon()
+function slider()
 {
     \Carbon_Fields\Block::make('Slider')
         ->set_description(__("Un bloc constitué d'une image et d'un titre pour inciter à se rendre sur une page."))
@@ -16,7 +16,7 @@ function slider_carbon()
                     Field::make('image', 'image', 'Image'),
                     Field::make('text', 'title', 'Title'),
                     Field::make('text', 'subtitle', 'Sous-titre'),
-                    Field::make('url', 'url', 'Lien de la page du produit'),
+                    Field::make('text', 'url', 'Lien de la page du produit'),
                 )),
         ))
         ->set_render_callback(function ($fields) {
@@ -63,4 +63,4 @@ function slider_carbon()
         });
 }
 
-add_action('carbon_fields_register_fields', 'slider_carbon');
+add_action('carbon_fields_register_fields', 'slider');

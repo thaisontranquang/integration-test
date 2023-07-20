@@ -54,6 +54,10 @@
             padding: 3rem 8rem;
         }
 
+        @media (min-width: $from-medium) {
+            padding: 3rem 10rem;
+        }
+
         @media (min-width: $from-large) {
             padding: 1.5rem 0;
         }

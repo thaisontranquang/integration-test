@@ -1,0 +1,57 @@
+.block_introduction {
+    background: $color-white;
+    padding: 5rem 1rem;
+    div {
+        max-width: 57.5rem;
+        width: 100%;
+        margin: auto;
+        h2 {
+            font-family: $secondary-font;
+            font-size: 2rem;
+            line-height: 2.625rem;
+            font-weight: 300;
+            color: $color-black;
+            margin-bottom: 1rem;
+            max-width: 90%;
+
+            @media (min-width: $from-small) {
+                font-size: 3rem;
+                line-height: 3.625rem;
+            }
+        }
+        .grid {
+            display: grid;
+            width: 100%;
+            gap: 1.5rem;
+            grid-template-columns: 1fr;
+
+            @media (min-width: $from-small) {
+                grid-template-columns: repeat(3, 1fr);
+            }
+
+            div {
+                width: 100%;
+                height: 100%;
+                img {
+                    width: 100%;
+                    height: 16.4rem;
+                    object-fit: cover;
+                }
+                p:first-of-type {
+                    font-family: $secondary-font;
+                    font-weight: 400;
+                    color: $color-black;
+                    font-size: 1.125rem;
+                    line-height: 1.625rem;
+                    margin: 0.5rem 0;
+                }
+                p {
+                    font-family: $secondary-font;
+                    line-height: 1.5rem;
+                    color: $color-gray-3;
+                    margin-top: 0.5rem;
+                }
+            }
+        }
+    }
+}

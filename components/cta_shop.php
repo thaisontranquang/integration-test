@@ -3,7 +3,7 @@
 use Carbon_Fields\Field;
 use Carbon_Fields\Container;
 
-function cta_shop_carbon()
+function cta_shop()
 {
     \Carbon_Fields\Block::make('Appel au clic boutique')
         ->set_description(__("Un bloc constitué d'une image et d'un titre pour inciter à se rendre sur une page."))
@@ -46,4 +46,4 @@ function cta_shop_carbon()
         });
 }
 
-add_action('carbon_fields_register_fields', 'cta_shop_carbon');
+add_action('carbon_fields_register_fields', 'cta_shop');

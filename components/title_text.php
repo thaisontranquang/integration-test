@@ -3,7 +3,7 @@
 use Carbon_Fields\Field;
 use Carbon_Fields\Container;
 
-function title_text_carbon()
+function title_text()
 {
     \Carbon_Fields\Block::make('Titre et texte')
         ->set_description(__("Un bloc constitué d'un titre et d'un texte."))
@@ -23,4 +23,4 @@ function title_text_carbon()
         });
 }
 
-add_action('carbon_fields_register_fields', 'title_text_carbon');
+add_action('carbon_fields_register_fields', 'title_text');

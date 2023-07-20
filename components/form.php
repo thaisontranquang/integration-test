@@ -3,7 +3,7 @@
 use Carbon_Fields\Field;
 use Carbon_Fields\Container;
 
-function form_carbon()
+function form()
 {
     \Carbon_Fields\Block::make('Formulaire de contact')
         ->set_description(__("Un bloc constitué d'une image, d'un titre et d'un formulaire de contact."))
@@ -32,4 +32,4 @@ function form_carbon()
         });
 }
 
-add_action('carbon_fields_register_fields', 'form_carbon');
+add_action('carbon_fields_register_fields', 'form');

@@ -13,3 +13,18 @@ body {
     color: $color-black;
     background: $color-bg;
 }
+
+.container {
+    width: 100%;
+    padding: 1rem;
+
+    @media (min-width: $from-medium) {
+        padding: 2rem 10rem;
+    }
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}

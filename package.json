@@ -11,5 +11,8 @@
     "devDependencies": {
         "sass": "^1.63.6"
     },
-    "keywords": []
+    "keywords": [],
+    "dependencies": {
+        "owl.carousel": "^2.3.4"
+    }
 }

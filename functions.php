@@ -3,6 +3,9 @@
 use Carbon_Fields\Container;
 use Carbon_Fields\Field;
 
+
+//THEME OPTIONS 
+
 function crb_attach_theme_options()
 {
     \Carbon_Fields\Container::make('theme_options', __('Theme Options'))
@@ -24,3 +27,6 @@ function crb_load()
 //BLOCKS
 
 require_once 'components/form.php';
+require_once 'components/title_text.php';
+require_once 'components/cta_shop.php';
+require_once 'components/slider.php';

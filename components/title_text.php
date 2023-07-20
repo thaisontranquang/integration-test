@@ -11,7 +11,7 @@ function title_text()
         ->add_fields(array(
             Field::make('separator', 'crb_separator', __('Bloc titre et texte')),
             Field::make('text', 'title', 'Titre'),
-            Field::make('text', 'text', 'Texte'),
+            Field::make('textarea', 'text', 'Texte'),
         ))
         ->set_render_callback(function ($fields) {
 ?>

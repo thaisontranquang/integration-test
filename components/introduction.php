@@ -11,18 +11,21 @@ function introduction()
         ->add_fields(array(
             Field::make('separator', 'crb_separator', __('Bloc présentation')),
             Field::make('text', 'title', 'Titre'),
+
             Field::make('image', 'image1', __('Image bloc 1'))
                 ->set_value_type('url'),
             Field::make('text', 'subtitle1', 'Sous-titre bloc 1'),
-            Field::make('text', 'text1', 'Texte bloc 1'),
+            Field::make('textarea', 'text1', 'Texte bloc 1'),
+
             Field::make('image', 'image2', __('Image bloc 2'))
                 ->set_value_type('url'),
             Field::make('text', 'subtitle2', 'Sous-titre bloc 2'),
-            Field::make('text', 'text2', 'Texte bloc 2'),
+            Field::make('textarea', 'text2', 'Texte bloc 2'),
+
             Field::make('image', 'image3', __('Image bloc 3'))
                 ->set_value_type('url'),
             Field::make('text', 'subtitle3', 'Sous-titre bloc 3'),
-            Field::make('text', 'text3', 'Texte bloc 3'),
+            Field::make('textarea', 'text3', 'Texte bloc 3'),
         ))
         ->set_render_callback(function ($fields) {
 ?>

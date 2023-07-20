@@ -12,14 +12,19 @@ function theme_options()
         ->add_fields(array(
             Field::make('image', 'logo', 'Ajouter un logo')
                 ->set_value_type('url'),
-            Field::make('text', 'contact', 'Informations de contact'),
-            Field::make('text', 'location', 'Nous situer'),
+            Field::make('textarea', 'contact', 'Informations de contact'),
+            Field::make('textarea', 'location', 'Nous situer'),
             Field::make('complex', 'networks', 'Réseaux sociaux')
                 ->set_layout('tabbed-horizontal')
                 ->add_fields(array(
                     Field::make('image', 'icon', 'Icon du réseau social'),
                     Field::make('text', 'url', 'Lien de votre compte'),
                 )),
+            Field::make('complex', 'footer_menu', 'Footer Menu')
+                ->add_fields(array(
+                    \Carbon_Fields\Field::make('text', 'menu_item_title', 'Titre lien menu'),
+                    \Carbon_Fields\Field::make('text', 'menu_item_url', 'Lien menu'),
+                ))
         ));
 }
 add_action('carbon_fields_register_fields', 'theme_options');
@@ -39,3 +44,4 @@ require_once 'components/title_text.php';
 require_once 'components/cta_shop.php';
 require_once 'components/slider.php';
 require_once 'components/introduction.php';
+require_once 'components/cta.php';

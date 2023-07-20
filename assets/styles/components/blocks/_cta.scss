@@ -1,0 +1,52 @@
+.block_cta {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    padding: 1rem;
+    margin: 1rem auto;
+
+    @media (min-width: $from-tiny) {
+        padding: 3rem 5rem;
+    }
+
+    @media (min-width: $from-small) {
+        padding: 3rem 8rem;
+    }
+
+    @media (min-width: $from-medium) {
+        padding: unset;
+        max-width: 45.3rem;
+        margin: 5rem auto;
+    }
+    h2 {
+        font-family: $secondary-font;
+        font-weight: 300;
+        font-size: 2rem;
+        color: $color-black;
+        text-align: center;
+
+        @media (min-width: $from-small) {
+            font-size: 2.25rem;
+        }
+    }
+    a {
+        background: $color-secondary;
+        border: unset;
+        border-radius: 5px;
+        color: $color-black;
+        padding: 1.4rem 2.5rem;
+        font-size: 1rem;
+        cursor: pointer;
+        transition: 0.1s ease-in-out;
+        margin: 1.5rem 0 0;
+
+        @media (min-width: $from-small) {
+            max-width: fit-content;
+        }
+        &:hover {
+            background: $color-secondary-darken;
+        }
+    }
+}

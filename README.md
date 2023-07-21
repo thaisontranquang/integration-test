@@ -16,3 +16,7 @@ The following plugins were utilized to enhance the functionality and features of
 3. Contact Form 7: A widely-used WordPress plugin for managing multiple contact forms and customizing form content flexibly.
 
 4. Duplicator: Used for easy site migration and backups, allowing the smooth transfer of the landing page from development to production environments.
+
+### Hosting
+
+This project is hosted and deployed using Ionos. 

@@ -659,6 +659,7 @@ footer {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  height: fit-content;
 }
 footer > div {
   display: grid;

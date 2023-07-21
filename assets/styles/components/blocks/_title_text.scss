@@ -6,11 +6,7 @@
     margin: 1rem auto;
 
     @media (min-width: $from-tiny) {
-        padding: 3rem 5rem;
-    }
-
-    @media (min-width: $from-small) {
-        padding: 3rem 8rem;
+        padding: 3rem 1rem;
     }
 
     @media (min-width: $from-medium) {

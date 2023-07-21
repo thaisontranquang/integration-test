@@ -43,6 +43,14 @@ footer {
                     color: $color-gray-3;
                     font-size: 0.875rem;
                     line-height: 1.5rem;
+                    a {
+                        border-bottom: 1px solid transparent;
+                        transition: 0.2s ease-in-out;
+                        color: $color-gray-3;
+                        &:hover {
+                            border-bottom: 1px solid $color-gray-3;
+                        }
+                    }
                 }
             }
         }
